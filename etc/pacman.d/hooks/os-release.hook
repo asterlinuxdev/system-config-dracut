@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = filesystem
+
+[Action]
+Description = Add AsterLinux specific config
+When = PostTransaction
+Exec = /bin/sh -c "cp /usr/lib/os-release-asterlinux /usr/lib/os-release"

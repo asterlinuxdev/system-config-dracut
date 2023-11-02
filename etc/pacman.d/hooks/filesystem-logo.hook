@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = filesystem
+
+[Action]
+Description = Change to AsterLinux logo
+When = PostTransaction
+Exec = /bin/sh -c "cp /usr/share/pixmaps/asterlinux.svg /usr/share/pixmaps/archlinux.svg"
