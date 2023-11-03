@@ -8,6 +8,6 @@ Target = nvidia
 Target = nvidia-lts
 
 [Action]
-Depends = mkinitcpio
+Depends = kernel-install-for-dracut
 When = PostTransaction
-Exec = /usr/bin/mkinitcpio -P
+Exec = /usr/bin/reinstall-kernels
