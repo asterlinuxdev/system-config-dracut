@@ -222,11 +222,11 @@
 
 # Anyone can read and write in this folder
 # create the folder in your home folder and
-# change imran into your username
+# change $USER into your username
 # delete the ; characters to activate
 
 ;[SHARED]
-;path = /home/imran/SHARED
+;path = /home/$USER/SHARED
 ;browseable = yes
 ;guest ok = yes
 ;public = yes
